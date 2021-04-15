@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --color-primary-greenish-blue: #4d96a9;
+  --color-primary-pruple: #855fb1;
+  --color-primary-black: #28283d;
+  --color-primary-gray: #87879d;
+
+  --color-secondary-white: #fafafa;
+
+  --color-accent-light-blue: #8fe3f9;
+  --color-accent-light-purple: #d9b8ff;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-align: center;
+  color: var(--color-primary-gray);
+}
+
+.header-text {
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+
+.group-heading {
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 4.4rem;
+  text-align: center;
+  color: var(--color-primary-black);
+  margin-bottom: 2.4rem;
+}
+
+.group-paragraph {
+  margin-bottom: 3.2rem;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--color-secondary-white);
+  outline: transparent;
+  border: none;
+  border-radius: 2.9rem;
+  letter-spacing: 0.05rem;
+  white-space: nowrap;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-content {
+  color: var(--color-accent-light-blue);
+}
+
+.btn--lrg {
+  background-color: var(--color-primary-greenish-blue);
+  padding: 1.6rem 4rem;
+  text-align: center;
+  width: 19.3rem;
+  margin-bottom: 1.6rem;
+  transition: background-color 0.2s;
+}
+
+.btn--lrg:hover {
+  background-color: #71c0d4;
+}
+
+.btn--sm {
+  background-color: var(--color-primary-pruple);
+  padding: 1.6rem 2.9rem;
+  width: 13.9rem;
+  transition: background-color 0.2s;
+}
+
+.btn--sm:hover {
+  background-color: #b18bdd;
+}
+
+.inactive {
+  display: none;
+}
+
+.navbar {
+  text-align: center;
+  padding-top: 4.8rem;
+  padding-bottom: 5.4rem;
+}
+
+.people-1 {
+  position: relative;
+  left: -5%;
+  width: 110%;
+  margin-bottom: 4.8rem;
+}
