@@ -38,6 +38,14 @@ p {
   color: var(--color-primary-gray);
 }
 
+.inactive {
+  display: none;
+}
+
+.header {
+  margin-bottom: 6.4rem;
+}
+
 .navbar {
   text-align: center;
   padding-top: 4.8rem;
@@ -51,6 +59,14 @@ p {
   margin-bottom: 4.8rem;
 }
 
+.header-people-2 {
+  display: none;
+}
+
+.header-people-3 {
+  display: none;
+}
+
 .header-text {
   padding-left: 2.4rem;
   padding-right: 2.4rem;
@@ -61,26 +77,12 @@ p {
   font-size: 4rem;
   line-height: 4.4rem;
   text-align: center;
-  /* max-width: 44.5rem; */
   color: var(--color-primary-black);
   margin: 0 auto 2.4rem;
 }
 
-@media screen and (min-width: 768px) {
-  .group-heading {
-    font-size: 4.8rem;
-    line-height: 4.8rem;
-  }
-}
-
 .group-paragraph {
   margin: 0 auto 3.2rem;
-}
-
-@media screen and (min-width: 531px) {
-  .group-paragraph {
-    width: 45.7rem;
-  }
 }
 
 .btn {
@@ -132,7 +134,59 @@ p {
   background-color: #b18bdd;
 }
 
+.site-divider {
+  margin-bottom: 6.4rem;
+}
+
+.divider-line {
+  width: 0.1rem;
+  height: 8.4rem;
+  background-color: var(--color-primary-black);
+  opacity: 0.25;
+  margin: 0 auto;
+}
+
+.divider-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--color-primary-gray);
+  width: 5.6rem;
+  height: 5.6rem;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  border-radius: 2.9rem;
+  margin: 0 auto;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 531px) {
+  .group-paragraph {
+    width: 45.7rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .header {
+    margin-bottom: 8rem;
+  }
+
+  .navbar {
+    padding-bottom: 6.4rem;
+  }
+
+  .people-1 {
+    margin-bottom: 7.2rem;
+  }
+
+  .group-heading {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+  }
+
   .btn-group {
     flex-direction: row;
   }
@@ -143,6 +197,67 @@ p {
   }
 }
 
-.inactive {
-  display: none;
+@media screen and (min-width: 1024px) {
+  .header-people-1 {
+    text-align: center;
+  }
+
+  .people-1 {
+    position: initial;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 11rem;
+  }
+
+  .header-people-1 {
+    display: none;
+  }
+
+  .header-people-2 {
+    display: block;
+    order: 1;
+  }
+
+  .people-2 {
+    position: relative;
+    left: -8%;
+    width: 100%;
+  }
+
+  .header-people-3 {
+    display: block;
+    order: 3;
+  }
+
+  .people-3 {
+    position: relative;
+    right: -8%;
+    width: 100%;
+  }
+
+  .header-text {
+    order: 2;
+    margin-right: 8rem;
+    margin-left: 8rem;
+  }
+
+  .group-heading {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+  }
+
+  .group-paragraph {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    letter-spacing: 0.1rem;
+  }
 }
