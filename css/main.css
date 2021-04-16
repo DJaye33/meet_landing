@@ -96,7 +96,6 @@ p {
   outline: transparent;
   border: none;
   border-radius: 2.9rem;
-  letter-spacing: 0.05rem;
   white-space: nowrap;
 }
 
@@ -113,7 +112,7 @@ p {
 
 .btn--lrg {
   background-color: var(--color-primary-greenish-blue);
-  padding: 1.6rem 4rem;
+  padding: 1.6rem 0;
   text-align: center;
   width: 19.3rem;
   margin-bottom: 1.6rem;
@@ -126,8 +125,9 @@ p {
 
 .btn--sm {
   background-color: var(--color-primary-pruple);
-  padding: 1.6rem 2.9rem;
+  padding: 1.6rem 0;
   width: 13.9rem;
+  text-align: center;
   transition: background-color 0.2s;
 }
 
@@ -176,6 +176,35 @@ p {
   border-radius: 0.8rem;
 }
 
+.meetings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  margin-bottom: 6.4rem;
+}
+
+.meetings-text {
+  font-weight: 900;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  color: var(--color-primary-greenish-blue);
+  margin-bottom: 2.4rem;
+}
+
+.meetings-heading {
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  text-align: center;
+  color: var(--color-primary-black);
+  margin-bottom: 3.2rem;
+}
+
 /* Media queries */
 
 @media screen and (min-width: 531px) {
@@ -218,6 +247,15 @@ p {
     padding-right: 4rem;
     margin-bottom: 4.8rem;
   }
+
+  .meetings {
+    padding-left: 9.8rem;
+    padding-right: 9.8rem;
+  }
+
+  .meetings-heading {
+    width: 33rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -228,6 +266,13 @@ p {
   .people-1 {
     position: initial;
     width: 90%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .meetings-paragraph {
+    font-size: 1.8rem;
+    width: 54rem;
   }
 }
 
